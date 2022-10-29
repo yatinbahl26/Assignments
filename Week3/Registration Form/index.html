@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Registration</title>
+</head>
+
+<body>
+
+  <main>
+    <form action="success.html" class="main-form">
+      <h1> Registration Form</h1>
+      <div class="content">
+        <div class="form-element">
+          <label for="first-name" id="first-name_label">First name</label>
+          <input type="text" aria-labelledby="first-name_label" id="first-name" required>
+        </div>
+        <div class="form-element">
+          <label for="last-name" id="last-name_label">Last name</label>
+          <input type="text" aria-labelledby="last-name_label" id="last-name" required>
+        </div>
+        <div class="form-element">
+          <label for="phone-number" id="phone-number_label">Phone number</label>
+          <input type="number" aria-labelledby="phone-number_label" id="phone-number" required>
+        </div>
+        <div class="form-element">
+          <label for="email" id="email_label">Email</label>
+          <input type="text" aria-labelledby="email_label" id="email" required>
+        </div>
+        <div class="form-select">
+          <label for="gender">Gender</label>
+          <select name="Your Gender" id="gender">
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="form-select">
+          <label for="gender" id="gender_label">Select date of birth</label>
+          <input type="date" aria-labelledby="gender_label" id="date">
+        </div>
+        <div class="form-select">
+          <label for="color" id="color_label">Favorite color</label>
+          <input type="color" aria-labelledby="color_label" id="color">
+        </div>
+        <button class="cta"> Submit</button>
+        <p style="margin-top:1">Already have an account <span> <a href="./login.html">Login</a></span> </p>
+      </div>
+    </form>
+  </main>
+
+
+</body>
+
+</html>

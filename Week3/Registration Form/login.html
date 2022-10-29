@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <style>
+    body {
+      background: radial-gradient(263px at 100.2% 3%, rgb(12, 85, 141) 31.1%, rgb(205, 181, 93) 36.4%, rgb(244, 102, 90) 50.9%, rgb(199, 206, 187) 60.7%, rgb(249, 140, 69) 72.5%, rgb(12, 73, 116) 72.6%);
+    }
+
+    body {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+    }
+
+    label,
+    input {
+      display: inline-block;
+    }
+
+    label {
+      width: 30%;
+    }
+
+    label+input {
+      width: 30%;
+      margin: 0 10% 0 1%;
+    }
+
+    input {
+
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid gray;
+      border-radius: 4px;
+      background-color: #ddd;
+      color: brown;
+    }
+
+    input :focus {
+      background-color: white;
+      border: 3px solid #555;
+    }
+
+    button {
+      display: block;
+      margin: 15px auto;
+      border: 1px solid black;
+      background-color: #13547a;
+      color: black;
+      line-height: 20px;
+      padding: 15px 25px;
+      border-radius: 30px;
+      transition: all 200ms ease-in-out;
+
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: blue;
+      box-shadow: 5px 2px 2px black;
+    }
+
+    .flex-container {
+      margin-top: 2rem;
+      margin-left: 5rem;
+      font-size: 2rem;
+      line-height: 5.4rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.77);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Login Here</h1>
+  </header>
+  <main>
+    <form action="success.html">
+      <label for="email"> Email:</label><br />
+      <input type="email" id="email" name="email" placeholder="email address" required />
+      <br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" placeholder="type in password" required /><br />
+
+      <button type="submit" class="submitbtn"> Submit <a href="su"></a> </button>
+      <p> <a href="index.html"> Register here</a></p>
+    </form>
+  </main>
+
+</body>
+
+</html>

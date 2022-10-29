@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"); 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: cyan;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  :root {
+    font-size: 10px;
+  }
+}
+body {
+  background-image: url("./4775334_19366.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  padding-inline: 1rem;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.main-form {
+  width: clamp(9.375rem, 100%, 29.875rem);
+  margin: auto;
+  padding-block: 1.25rem;
+  padding-inline: 2.5rem;
+  box-shadow: 0px 5px 16px 2px hsla(0deg, 0%, 0%, 0.122);
+  border-radius: 0.5rem;
+  margin-top: 10vh;
+  background-color: white;
+}
+.main-form * + .form-element {
+  margin-top: 0.75em;
+}
+.main-form h1 + * {
+  margin-top: 1.25em;
+}
+.main-form h1 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+.main-form .form-element {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 0.0625rem solid #8a8a8a;
+  border-radius: 0.25rem;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+.main-form .form-element input {
+  all: unset;
+  max-height: 1.25rem;
+  margin-top: 0.25rem;
+}
+.main-form .form-element input[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.main-form .form-element label {
+  font-size: 0.75rem;
+  color: #8a8a8a;
+}
+.main-form .cta {
+  all: unset;
+  text-align: center;
+  background-color: #453F78;
+  width: 100%;
+  padding-block: 0.75em;
+  border-radius: 0.25em;
+  margin-top: 1em;
+  color: white;
+}
+.main-form .cta:hover {
+  cursor: pointer;
+  transition: background 200ms ease-in-out;
+  background-color: #736bb2;
+}
+
+.form-select {
+  margin-top: 0.75em;
+  display: flex;
+  flex-direction: column;
+}
+.form-select > [id=gender] {
+  margin-top: 0.25em;
+  padding: 0.5em 1em;
+  background-color: white;
+  border: none;
+  border: 0.0625em solid #8a8a8a;
+}
